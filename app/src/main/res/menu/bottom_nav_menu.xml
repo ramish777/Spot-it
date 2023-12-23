@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Home"
+        android:icon="@drawable/ic_home_navbar"
+        android:id="@+id/home_bottomnav"/>
+    <item android:title="Search"
+        android:icon="@drawable/ic_search_navbar"
+        android:id="@+id/search_bottomnav"/>
+    <item android:title=""
+        android:id="@+id/add_bottomnav"
+        android:icon="@drawable/ic_add_navbar" />
+<!--    <item android:title=""-->
+<!--        android:id="@+id/add_bottomnav" />-->
+    <item android:title="Chat"
+        android:icon="@drawable/ic_chat_navbar"
+        android:id="@+id/chat_bottomnav" />
+    <item android:title="Profile"
+        android:icon="@drawable/ic_profile_navbar"
+        android:id="@+id/profile_bottomnav" />
+</menu>

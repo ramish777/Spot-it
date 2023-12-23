@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".Login"
+    android:gravity="top"
+    android:paddingTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:id="@+id/image_back_chat"
+                android:layout_gravity="start|center_vertical"
+                android:contentDescription="@null"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_gravity="start|center_vertical"
+                android:textColor="@color/primary_grey_1"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/image_voice_call"
+                android:layout_gravity="end|center_vertical"
+                android:contentDescription="@null"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_phone"
+                android:layout_marginRight="20dp"/>
+
+            <ImageView
+                android:id="@+id/image_video_call"
+                android:layout_gravity="end|center_vertical"
+                android:contentDescription="@null"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_video" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_line" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom|center">
+
+        <ScrollView
+            android:id="@+id/scroll_chat_messages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/message_separator_bar"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="bottom|center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:clipToPadding="false"
+                    android:id="@+id/messagesRV" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <View
+            android:id="@+id/message_separator_bar"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_line"
+            android:layout_above="@id/enter_message_bar"/>
+
+        <EditText
+            android:id="@+id/enter_message_bar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Write a reply..."
+            android:inputType="text"
+            android:background="@color/white"
+            android:paddingLeft="15dp"
+            android:layout_marginLeft="9dp"
+            android:layout_above="@id/attach_send_bar" />
+
+        <LinearLayout
+            android:id="@+id/attach_send_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:id="@+id/takePhoto"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_weight="0.1"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_camera" />
+
+            <ImageView
+                android:id="@+id/insertPhoto"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_weight="0.1"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_insert_photo" />
+
+            <ImageView
+                android:id="@+id/insertVideo"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_weight="0.1"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_insert_video" />
+
+            <TextView
+                android:id="@+id/send"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="end|center_vertical"
+                android:text="Send"
+                android:textColor="@color/primary_orange"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

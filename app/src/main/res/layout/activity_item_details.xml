@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".Login"
+    android:gravity="top"
+    android:paddingTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:id="@+id/image_back_item"
+                android:layout_gravity="start|center_vertical"
+                android:contentDescription="@null"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/primary_grey_1" />
+
+            <TextView
+                android:id="@+id/text_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Report"
+                android:textSize="17sp"
+                android:gravity="end"
+                android:textColor="@color/primary_orange" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_line" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/itemImg"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/sole_f63_treadmill"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$12"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/primary_orange" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" / hr"
+            android:textSize="22sp"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/primary_black" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sole F63 Treadmill"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/primary_black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="0.15">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_location" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Islamabad"
+            android:textSize="15sp"
+            android:gravity="start"
+            android:layout_weight="0.7"
+            android:textColor="@color/primary_grey_6" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="7th Mar, 2023"
+            android:textSize="15sp"
+            android:gravity="end"
+            android:layout_weight="1"
+            android:textColor="@color/primary_grey_6" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        android:textSize="15sp"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/primary_black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="24dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/ownerImg"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/chat_portrait_1" />
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/ownerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Makenna Dias"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="top"
+                android:layout_weight="1"
+                android:textColor="@color/primary_blue" />
+
+            <TextView
+                android:id="@+id/ownerRentedCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24 items rented"
+                android:textSize="13sp"
+                android:gravity="start"
+                android:layout_weight="1"
+                android:textColor="@color/primary_grey_6" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/message"
+            android:layout_gravity="end|center_vertical"
+            android:contentDescription="@null"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_chat_navbar"
+            android:background="@drawable/number_input"
+            android:padding="7dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_line"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/rent"
+        android:text="Rent it"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:stateListAnimator="@null"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".HomeFragment"
+    android:layout_gravity="top"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find exactly what you need!"
+        android:textSize="22sp"
+        android:gravity="start"
+        android:textColor="@color/primary_black"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/searchInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Search"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/input_box"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="5dp"
+        android:paddingLeft="15dp"
+        android:imeOptions="actionSearch" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recent Searches"
+        android:textSize="15sp"
+        android:gravity="start"
+        android:textColor="@color/primary_black"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/inspironSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inspiron"
+            android:textSize="17sp"
+            android:gravity="start"
+            android:layout_weight="1"
+            android:textColor="@color/primary_grey_7" />
+
+        <ImageView
+            android:layout_gravity="end|center_vertical"
+            android:contentDescription="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_outward" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Popular Searches"
+        android:textSize="15sp"
+        android:gravity="start"
+        android:textColor="@color/primary_black"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/clownSuitSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clown Suit"
+            android:textSize="17sp"
+            android:gravity="start"
+            android:layout_weight="1"
+            android:textColor="@color/primary_grey_7" />
+
+        <ImageView
+            android:layout_gravity="end|center_vertical"
+            android:contentDescription="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_outward" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ballSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ball"
+            android:textSize="17sp"
+            android:gravity="start"
+            android:layout_weight="1"
+            android:textColor="@color/primary_grey_7" />
+
+        <ImageView
+            android:layout_gravity="end|center_vertical"
+            android:contentDescription="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_outward" />
+
+    </LinearLayout>
+
+</LinearLayout>
